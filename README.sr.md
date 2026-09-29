@@ -2,7 +2,7 @@
 
 Lansiranje i migracija sajta.
 
-**[novisajtovi.com](https://novisajtovi.com/)** · [English](README.md)
+**[novisajtovi.com](https://novisajtovi.com/)** · [Studija: Golden Pets Hotel](https://novisajtovi.com/kontrolna-tabla/golden-pets-hotel/) · [English](README.md)
 
 > [!NOTE]
 > Samostalni projekat D. Svilenkovića. Produkcijski izvor ostaje u privatnom repozitorijumu; ovaj javni repozitorijum dokumentuje izvedeni rad.
@@ -10,7 +10,7 @@ Lansiranje i migracija sajta.
 <table>
   <tr><td><b>Vrsta</b></td><td>Lansiranje i migracija sajta</td></tr>
   <tr><td><b>Jezici</b></td><td>srpski i engleski</td></tr>
-  <tr><td><b>Javne rute</b></td><td>20 canonical stranica</td></tr>
+  <tr><td><b>Javne rute</b></td><td>22 canonical stranica</td></tr>
   <tr><td><b>Uloga</b></td><td>istraživanje, dizajn, razvoj, SEO, hosting i održavanje</td></tr>
   <tr><td><b>Tehnologije</b></td><td>Astro, TypeScript, CSS, PHP 8.3, SQLite, nginx</td></tr>
 </table>

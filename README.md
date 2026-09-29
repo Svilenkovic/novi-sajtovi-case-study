@@ -2,7 +2,7 @@
 
 A launch and migration website built around controlled releases, preserved URLs and clear handover steps.
 
-**[novisajtovi.com](https://novisajtovi.com/)** · [Srpski](README.sr.md)
+**[novisajtovi.com](https://novisajtovi.com/)** · [Golden Pets Hotel case study](https://novisajtovi.com/en/control-board/golden-pets-hotel/) · [Srpski](README.sr.md)
 
 > [!NOTE]
 > This is an independent project by D. Svilenković. The production source stays in a private repository; this public repository documents the work.
@@ -10,7 +10,7 @@ A launch and migration website built around controlled releases, preserved URLs 
 <table>
   <tr><td><b>Type</b></td><td>Launch and migration website</td></tr>
   <tr><td><b>Languages</b></td><td>Serbian and English</td></tr>
-  <tr><td><b>Public routes</b></td><td>20 canonical pages</td></tr>
+  <tr><td><b>Public routes</b></td><td>22 canonical pages</td></tr>
   <tr><td><b>Role</b></td><td>Research, design, development, SEO, hosting and maintenance</td></tr>
   <tr><td><b>Stack</b></td><td>Astro, TypeScript, CSS, PHP 8.3, SQLite, nginx</td></tr>
 </table>
