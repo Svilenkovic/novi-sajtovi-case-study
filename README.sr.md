@@ -1,42 +1,58 @@
+<a href="https://novisajtovi.com/"><img src="media/cover.jpg" alt="Novi sajtovi, naslovna strana na laptopu i telefonu" width="100%"></a>
+
 # Novi sajtovi
 
-Lansiranje i migracija sajta.
+Postupci koje pratim kad se sajt objavljuje ili seli, sa checklistom pred objavu i generatorom 301 preusmerenja.
 
-**[novisajtovi.com](https://novisajtovi.com/)** · [Studija: Golden Pets Hotel](https://novisajtovi.com/kontrolna-tabla/golden-pets-hotel/) · [English](README.md)
+**[novisajtovi.com](https://novisajtovi.com/)** · [Studija slučaja](https://svilenkovic.rs/radovi/novi-sajtovi) · [English](README.md)
 
 > [!NOTE]
-> Samostalni projekat D. Svilenkovića. Produkcijski izvor ostaje u privatnom repozitorijumu; ovaj javni repozitorijum dokumentuje izvedeni rad.
+> Moj sopstveni projekat, ne klijentski posao. Izvorni kod je privatan. Ova stranica opisuje šta sajt radi i kako je napravljen.
 
 <table>
-  <tr><td><b>Vrsta</b></td><td>Lansiranje i migracija sajta</td></tr>
-  <tr><td><b>Jezici</b></td><td>srpski i engleski</td></tr>
-  <tr><td><b>Javne rute</b></td><td>22 canonical stranica</td></tr>
-  <tr><td><b>Uloga</b></td><td>istraživanje, dizajn, razvoj, SEO, hosting i održavanje</td></tr>
-  <tr><td><b>Tehnologije</b></td><td>Astro, TypeScript, CSS, PHP 8.3, SQLite, nginx</td></tr>
+  <tr><td><b>Klijent</b></td><td>Sopstveni projekat</td></tr>
+  <tr><td><b>Delatnost</b></td><td>Objava i selidba sajtova</td></tr>
+  <tr><td><b>Lokacija</b></td><td>Srbija</td></tr>
+  <tr><td><b>Vrsta</b></td><td>Sajt sa više strana i alatima</td></tr>
+  <tr><td><b>Moj deo posla</b></td><td>Istraživanje, dizajn, izrada, SEO i hosting</td></tr>
+  <tr><td><b>Tehnologije</b></td><td>Astro 7, TypeScript, PHP 8.3, SQLite, nginx</td></tr>
 </table>
 
-## Namena
+## O projektu
 
-Novi sajt vredi tek kada je prelazak kontrolisan. Projekat objašnjava popis sadržaja, preusmerenja, DNS, provere izdanja i primopredaju redom kojim se stvarno rade.
+Nov sajt najviše izgubi na dan objave: stare adrese ostanu bez odredišta, Google vidi pogrešnu verziju, a prve nedelje niko ne gleda šta se dešava. Na novisajtovi.com sam skupio alate i postupke koje koristim pri svakoj objavi i selidbi. Vodiči idu redom kojim radim i sam: spisak starih adresa, jedna promena u jednom trenutku, pa praćenje posle objave.
 
-## Dizajn pravac
+Početna strana izgleda kao tabla polazaka na aerodromu, a na njoj su sajtovi koje sam pokrenuo 2025. i 2026: delatnost, mesto, vrsta sajta, mobilna ocena i mesec od kada su na mreži. Pločice sam napravio sam, bez biblioteke za animaciju. Tekst u HTML-u se ne menja dok se pločice prelistavaju, pa ga pretraživač i čitač ekrana čitaju normalno, a uz smanjeno kretanje tabla odmah stoji u krajnjem stanju.
 
-Stranica se ponaša kao kontrola lansiranja. Paneli u ponoćno plavoj boji i bakarni indikatori prolaze kroz pripremu, objavu i proveru dok se posetilac kreće niz stranicu.
+## Šta sam uradio
 
-## Šta je urađeno
+- Checklista pred objavu sa 52 provere u osam grupa, štiklira se u pregledaču i ništa se ne šalje
+- Generator 301 pravila za nginx i Apache koji prvo pronađe lance, petlje i duplikate
+- Česti propusti iz mojih studija slučaja, kao IPv6 zapis koji vodi na server koji se ne javlja
+- Ručno pravljene split-flap pločice koje ne diraju tekst u HTML-u
+- Vodiči za prelazak na nov sajt, promenu domena, Search Console i prvih 30 dana posle objave
 
-- Plan migracije pre bilo kakve DNS promene
-- Preusmerenja i očuvanje starih adresa kao deo izrade
-- Fazno lansiranje sa proverom na svakoj tački
-- Srpski i engleski sadržaj sa odgovarajućim canonical i jezičkim vezama
-- Kontakt, privatnost, usluge i proces umesto jedne prodajne stranice
+## Merenja
 
-## Provere izdanja
+| | Performanse | Pristupačnost | Dobre prakse | SEO |
+| :-- | :-: | :-: | :-: | :-: |
+| Telefon | 100 | 100 | 100 | 100 |
+| Desktop | 100 | 100 | 100 | 100 |
 
-Svaka canonical ruta proverena je na širinama 390, 768, 1440 i 1920 px. Izdanje je provereno i bez JavaScript-a i uz reduced-motion postavku. Žive provere obuhvatile su HTTPS, preusmerenja, zaglavlja odgovora, strukturirane podatke, sitemap fajlove, zaštićene putanje i neispravne kontakt zahteve bez slanja test poruka.
+PageSpeed Insights, laboratorijsko merenje živog sajta, oktobar 2026. Sigurnosna zaglavlja: 6 od 6. axe provera pristupačnosti: bez prekršaja. Strukturisani podaci: `FAQPage`, `Person`.
 
-Ovo su inženjerske provere, a ne tvrdnje o poziciji u pretrazi ili terenskim performansama.
+## Snimci ekrana
+
+<table>
+  <tr>
+    <td width="68%" valign="top"><img src="media/desktop.webp" alt="Novi sajtovi, naslovna strana na ekranu širine 1440 px"></td>
+    <td width="32%" valign="top"><img src="media/mobile.webp" alt="Novi sajtovi, naslovna strana na telefonu"></td>
+  </tr>
+</table>
+
+<img src="media/inner-1.webp" alt="Generator 301 pravila posle provere lanaca, petlji i duplikata">
+<sub>Generator 301 pravila posle provere lanaca, petlji i duplikata</sub>
 
 ---
 
-<sub>Dizajn i izrada: [D. Svilenković](https://svilenkovic.com).</sub>
+<sub>Izrada: [D. Svilenković](https://svilenkovic.rs).</sub>

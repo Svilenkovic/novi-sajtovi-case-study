@@ -1,42 +1,58 @@
+<a href="https://novisajtovi.com/"><img src="media/cover.jpg" alt="Novi sajtovi, home page on a laptop and a phone" width="100%"></a>
+
 # Novi sajtovi
 
-A launch and migration website built around controlled releases, preserved URLs and clear handover steps.
+The steps I follow when a site launches or moves, with a pre-launch checklist and a 301 redirect generator.
 
-**[novisajtovi.com](https://novisajtovi.com/)** · [Golden Pets Hotel case study](https://novisajtovi.com/en/control-board/golden-pets-hotel/) · [Srpski](README.sr.md)
+**[novisajtovi.com](https://novisajtovi.com/)** · [Case study (in Serbian)](https://svilenkovic.rs/radovi/novi-sajtovi) · [Srpski](README.sr.md)
 
 > [!NOTE]
-> This is an independent project by D. Svilenković. The production source stays in a private repository; this public repository documents the work.
+> My own project, not client work. The source code is private. This page describes what the site does and how it is built.
 
 <table>
-  <tr><td><b>Type</b></td><td>Launch and migration website</td></tr>
-  <tr><td><b>Languages</b></td><td>Serbian and English</td></tr>
-  <tr><td><b>Public routes</b></td><td>22 canonical pages</td></tr>
-  <tr><td><b>Role</b></td><td>Research, design, development, SEO, hosting and maintenance</td></tr>
-  <tr><td><b>Stack</b></td><td>Astro, TypeScript, CSS, PHP 8.3, SQLite, nginx</td></tr>
+  <tr><td><b>Client</b></td><td>Own project</td></tr>
+  <tr><td><b>Industry</b></td><td>Website launches and migrations</td></tr>
+  <tr><td><b>Location</b></td><td>Serbia</td></tr>
+  <tr><td><b>Type</b></td><td>Multi-page website with tools</td></tr>
+  <tr><td><b>My role</b></td><td>Research, design, development, SEO and hosting</td></tr>
+  <tr><td><b>Stack</b></td><td>Astro 7, TypeScript, PHP 8.3, SQLite, nginx</td></tr>
 </table>
 
-## Purpose
+## About the project
 
-A new website is only useful when the move is controlled. The project explains content inventory, redirects, DNS, release checks and the handover in the order they actually happen.
+A new site loses the most on launch day: old addresses lead nowhere, Google sees the wrong version and nobody watches the first week. On novisajtovi.com I collected the tools and steps I use for every launch and every move. The guides follow the order I work in myself: a list of old addresses, one change at a time, then monitoring after launch.
 
-## Design direction
-
-The page behaves like a launch console. Midnight blue panels and copper indicators advance through preparation, release and verification as the visitor moves down the page.
+The home page is an airport departures board listing sites I launched in 2025 and 2026, with industry, town, type, mobile score and the month each went live. I wrote the split-flap tiles myself, without an animation library. The HTML text does not change while the tiles flip, so search engines and screen readers read it normally, and with reduced motion the board simply shows its final state.
 
 ## What I built
 
-- Migration planning before any DNS change
-- Redirect and old-URL preservation explained as part of the build
-- A staged launch sequence with verification at each point
-- Serbian and English content with matching canonical and language links
-- Contact, privacy, service and process pages instead of a single sales screen
+- A pre-launch checklist with 52 checks in eight groups, ticked in the browser with nothing sent
+- A 301 generator for nginx and Apache that first finds chains, loops and duplicates
+- Common failures taken from my own case studies, such as an IPv6 record pointing at a server that does not answer
+- Hand-made split-flap tiles that leave the HTML text untouched
+- Guides for moving to a new site, changing a domain, Search Console and the first 30 days after launch
 
-## Release checks
+## Results
 
-Every canonical route was checked at 390, 768, 1440 and 1920 px. The release was also tested without JavaScript and with reduced motion. Live checks covered HTTPS, redirects, response headers, structured data, sitemap files, protected paths and invalid contact requests without sending test mail.
+| | Performance | Accessibility | Best practices | SEO |
+| :-- | :-: | :-: | :-: | :-: |
+| Mobile | 100 | 100 | 100 | 100 |
+| Desktop | 100 | 100 | 100 | 100 |
 
-These are engineering checks, not claims about search ranking or field performance.
+PageSpeed Insights, lab test of the live site, October 2026. Security headers: 6 of 6. axe accessibility check: no violations. Structured data: `FAQPage`, `Person`.
+
+## Screenshots
+
+<table>
+  <tr>
+    <td width="68%" valign="top"><img src="media/desktop.webp" alt="Novi sajtovi, home page on a 1440 px screen"></td>
+    <td width="32%" valign="top"><img src="media/mobile.webp" alt="Novi sajtovi, home page on a phone"></td>
+  </tr>
+</table>
+
+<img src="media/inner-1.webp" alt="301 generator after checking for chains, loops and duplicates">
+<sub>301 generator after checking for chains, loops and duplicates</sub>
 
 ---
 
-<sub>Designed and built by [D. Svilenković](https://svilenkovic.com).</sub>
+<sub>Built by [D. Svilenković](https://svilenkovic.com).</sub>
