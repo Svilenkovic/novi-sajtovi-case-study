@@ -37,9 +37,9 @@ Početna strana izgleda kao tabla polazaka na aerodromu, a na njoj su sajtovi ko
 | | Performanse | Pristupačnost | Dobre prakse | SEO |
 | :-- | :-: | :-: | :-: | :-: |
 | Telefon | 100 | 100 | 100 | 100 |
-| Desktop | 100 | 100 | 100 | 100 |
+| Desktop | 99 | 100 | 100 | 100 |
 
-PageSpeed Insights, laboratorijsko merenje živog sajta, oktobar 2026. Sigurnosna zaglavlja: 6 od 6. axe provera pristupačnosti: bez prekršaja. Strukturisani podaci: `FAQPage`, `Organization`, `Person`.
+PageSpeed Insights, laboratorijsko merenje živog sajta, oktobar 2026. Sigurnosna zaglavlja: 6 od 6. axe provera pristupačnosti: bez prekršaja. Strukturisani podaci: `FAQPage`, `Person`.
 
 ## Snimci ekrana
 

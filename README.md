@@ -37,9 +37,9 @@ The home page is an airport departures board listing sites I launched in 2025 an
 | | Performance | Accessibility | Best practices | SEO |
 | :-- | :-: | :-: | :-: | :-: |
 | Mobile | 100 | 100 | 100 | 100 |
-| Desktop | 100 | 100 | 100 | 100 |
+| Desktop | 99 | 100 | 100 | 100 |
 
-PageSpeed Insights, lab test of the live site, October 2026. Security headers: 6 of 6. axe accessibility check: no violations. Structured data: `FAQPage`, `Organization`, `Person`.
+PageSpeed Insights, lab test of the live site, October 2026. Security headers: 6 of 6. axe accessibility check: no violations. Structured data: `FAQPage`, `Person`.
 
 ## Screenshots
 
